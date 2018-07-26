@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   resources :phones
   resources :addresses
-  resources :contacts, only: [:new, :show]
-  resources :kinds, except: [:edit]
+  resources :contacts
+  resources :kinds
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
