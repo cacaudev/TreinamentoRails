@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Kind.create(description: "Amigo")
+puts "Gerando os tipos de Contato (Kinds)..."
+Kind.create!([ {description: "Comércio"}, 
+               {description: 'Amigo'},
+               {description: 'Contato'} ])
+puts "Gerando os tipos de Contato (Kinds)...[OK]"
