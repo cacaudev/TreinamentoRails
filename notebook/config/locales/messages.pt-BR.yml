@@ -2,3 +2,5 @@
   messages:
     confirm: Tem certeza?
     listing: Listando
+    editing: Editar
+    errors: Erros que ocorreram
