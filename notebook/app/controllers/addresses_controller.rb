@@ -4,12 +4,13 @@ class AddressesController < ApplicationController
   # GET /addresses
   # GET /addresses.json
   def index
-    @addresses = Address.all
+    @addresses = Address.order(:created_at).includes(:contact)
   end
 
   # GET /addresses/1
   # GET /addresses/1.json
   def show
+    @addresses = Address.all
   end
 
   # GET /addresses/new
