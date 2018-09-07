@@ -1,32 +1,25 @@
-== README
+# Notebook App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a training project on Ruby on Rails from an Udemy Course. 
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version '2.1.2'
+
+* Rails version 4.2.5'
 
 * System dependencies
+  bundler must be version >= 1.8.4
 
 * Configuration
-
+  ```sh
+  $ bundle install
+  ```
 * Database creation
-  If you already have a db:
-    $ rake db:drop
-  or starting from zero:
-    $ rake db:create db:migrate db:seed utils:seed
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  ```sh
+  $ rake db:drop db:create
+  ```
+* Database initialization and seeding
+  ```sh
+  $ rake  db:migrate db:seed utils:seed
+  ```
