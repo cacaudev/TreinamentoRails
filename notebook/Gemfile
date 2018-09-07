@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-
+gem 'bundler', '>= 1.8.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
 gem 'cocoon'
+# A simple, versatile notification library
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
 # I18n for rails > 4.0.0
 gem 'rails-i18n', '~> 4.0.0'
 # A library for generating fake data such as names, addresses, and phone numbers.

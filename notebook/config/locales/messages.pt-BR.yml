@@ -4,3 +4,6 @@
     listing: Listando
     editing: Editar
     errors: Erros que ocorreram
+    created: Item criado com sucesso!
+    updated: Item atualizado com sucesso!
+    destroyed: Item excluído com sucesso!

@@ -1,5 +1,7 @@
 <div class="basic-grey">
-  <p id="notice"><%= notice %></p>
+  <script>
+    $.notify("<%= notice %>", "success");
+  </script>
   <h1><%= "#{ t('messages.listing') } #{ @contacts.model.model_name.human(count: @contacts.count) }" %></h1>
 
   <table>
@@ -28,6 +30,6 @@
   <%= paginate @contacts %>
 
   <br><br>
-  <%= link_to "#{ t('buttons.new')} #{ @contacts.model.model_name.human(count: 1) }", new_contact_path, class: "button" %>
-  <%= link_to "#{ t('buttons.home') }", home_index_path, class: "button" %>
+  <%= link_to "#{ t('buttons.new')} #{ @contacts.model.model_name.human(count: 1) }", new_contact_path, class: "btn btn-primary" %>
+  <%= link_to "#{ t('buttons.home') }", home_index_path, class: "btn btn-success" %>
 </div>
